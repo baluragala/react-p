@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Just React </title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react/15.4.2/react.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react/15.4.2/react-dom.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react/0.14.0-alpha1/JSXTransformer.js"></script>
+</head>
+<body>
+<div>
+    <h1>Just React!!!</h1>
+</div>
+<div id="react-app"></div>
+<footer>
+    <p>This is footer</p>
+</footer>
+<script type="text/jsx">
+  var MyFirstComponent = function () {
+    return (
+            <div>
+                <div>
+                    <div>
+                        <div>Hello React</div>
+                    </div>
+                </div>
+            </div>
+    )
+  };
+
+  ReactDOM.render(
+    React.createElement(MyFirstComponent),
+    document.getElementById("react-app")
+  );
+
+</script>
+</body>
+</html>
